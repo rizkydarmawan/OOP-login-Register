@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+	width:80%;
+	margin:30px auto;
+}
+
+header{
+	border-bottom: 5px solid black;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}
+
+footer{
+	font-style: oblique;
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: center;
+	height: 40px;
+	border-top: 5px solid black;
+	padding-top: 10px;
+	background: violet;
+}
+
+section{
+	min-height: 400px;
+}
+input{
+	width :200px;
+	padding :10px;
+	border-radius: 5px;
+	margin: 5px;
+}
+input:focus{
+	padding :10px;
+	border-radius: 5px;
+	background: black;
+	color: white;
+	font-weight: bold;
+}
+.submit:hover{
+	background: white;
+}
+.error {
+	color: red;
+}
