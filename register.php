@@ -46,8 +46,8 @@ if (Input::get('submit')) {
                 $errors = $validation->errors();
             }
         }
-    }
-    $errors[] = "Jangan Coba2 ";
+    } 
+      else  $errors[] = "Jangan Coba2 ";
 }
 require 'template/header.php';
 ?>

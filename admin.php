@@ -24,6 +24,8 @@ require 'template/header.php';
 	<a href = "profile.php?nama=<?= $_user['username'] ?>">
 		<li>
 			<?= strtoupper($_user['username']) ?> 
+			||  
+			<a href="delete.php?id=<?= $_user['id'] ?>&token=<?= Token::generate() ?>">Hapus Data</a>
 		</li>
 	</a>
 	<?php } ?>

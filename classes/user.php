@@ -21,6 +21,12 @@ class User
 		if ($this->_db->update('user',$field,$id)) return true;
 		else return false;
 	}
+
+    public function delete_user($id)
+    {
+       return $this->_db->delete('user', $id);
+    }
+
     public function login_user($username, $password)
     {
         $data = $this->_db->get_info('user', 'username', $username);

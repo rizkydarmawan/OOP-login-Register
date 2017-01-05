@@ -43,7 +43,7 @@ class Database
 
     }
 	
-	 public function update($table, $field = array(), $id)
+	public function update($table, $field = array(), $id)
     {
         $valueArr = array();
         $i=0;
@@ -59,6 +59,12 @@ class Database
         $query  = "UPDATE $table SET $values WHERE id=$id";
 		return $this->run_query($query);
 
+    }
+
+    public function delete($table, $id)
+    {
+        $query = "DELETE FROM $table WHERE id = $id";
+        return $this->mysqli->query($query);
     }
 	
     public function get_info($table, $field = '', $value = '')
